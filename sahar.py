@@ -36,3 +36,41 @@ for number in new_strr:
     avg = summ / counter
 print(f"The sum of the numbers is: {summ}")
 print(f"The average is: {avg}")
+
+
+new_dict = {"sahar": 80, "omer": 90}
+for key,value in new_dict.items():
+    maxi = max(new_dict.values())
+print(f"The max vaule is:{maxi, type(maxi)}")
+
+
+#1. Write a program that takes a list of words as input and counts the frequency of each
+#word. Store the word frequencies in a dictionary.
+
+words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
+word_freq = {}
+for word in words:
+    if word in word_freq:
+        word_freq[word] += 1
+    else:
+        word_freq[word] = 1
+print(word_freq)
+
+
+#2. Write a program to find the common elements between two dictionaries and store
+#them in a new dictionary.
+words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
+dictt = {}
+for word in words:
+    if word not in dictt:
+        dictt[word] = 1
+print(dictt)
+
+#3. Write a program to calculate the sum of all the values in a dictionary that are
+#integers.
+
+dictt = {'sahar': 1, 'tom': 2}
+summ = 0
+for key, value in dictt.items():
+    summ = summ + value
+print(summ)
