@@ -1,3 +1,4 @@
+### genearate random password ###
 import random, string
 a = string.ascii_letters + string.digits + string.punctuation
 length = int(input('Length password\n'))
@@ -5,6 +6,8 @@ password = ''
 for _ in range(length):
     password = password + random.choice(a)
 print(password)
+
+### blood donation ###
 type_blood = ['a', 'b', 'ab', 'o']
 donor = input('donor\n')
 recipient = input('recipient\n')
@@ -18,6 +21,8 @@ elif (donor != recipient) and (recipient == 'ab') and (donor == 'a' or 'b' or 'o
     print('yes')
 else:
     print('no')
+
+### take numbers from string and calc them ###
 strr = "Python31py50"
 new_strr = ''
 summ = 0
