@@ -1,11 +1,11 @@
-[10:53, 12.12.2023] סהר: import random, string
+import random, string
 a = string.ascii_letters + string.digits + string.punctuation
 length = int(input('Length password\n'))
 password = ''
 for _ in range(length):
     password = password + random.choice(a)
 print(password)
-[10:53, 12.12.2023] סהר: type_blood = ['a', 'b', 'ab', 'o']
+type_blood = ['a', 'b', 'ab', 'o']
 donor = input('donor\n')
 recipient = input('recipient\n')
 if donor not in type_blood or recipient not in type_blood:
@@ -18,7 +18,7 @@ elif (donor != recipient) and (recipient == 'ab') and (donor == 'a' or 'b' or 'o
     print('yes')
 else:
     print('no')
-[10:53, 12.12.2023] סהר: strr = "Python31py50"
+strr = "Python31py50"
 new_strr = ''
 summ = 0
 counter = 0
