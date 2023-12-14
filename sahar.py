@@ -131,9 +131,19 @@ print(new_strings4)
 
 ### question from interview ###
 version = 'build.1.17.18'
-splitt = version.split('.')
-new_version = int(splitt[3])
+split = version.split('.')
+new_version = int(split[3])
 print(new_version, type(new_version))
 for num in range(11):
     new_version = new_version + 1
     print(f"The num version is: {new_version}")
+
+
+dictt = {'sahar': 40, 'omer': 50}
+maxi = dictt['sahar']
+print(maxi, type(dictt))
+for k, v in dictt.items():
+    if v > maxi:
+        maxi = v
+        name = k
+print(f"The max number is: {maxi} and the name is: {name}")
